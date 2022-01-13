@@ -27,7 +27,7 @@ app.use(session({
 }));
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/final');
+mongoose.connect('mongodb+srv://m001-student:Sumoaibaiying79@e-commerce.vnbyl.mongodb.net/Final?retryWrites=true&w=majority');
 
 require('./login/service')(app);
 require('./products/products-service')(app);
